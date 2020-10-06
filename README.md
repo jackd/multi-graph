@@ -5,6 +5,7 @@ Package for simultaneously building and connecting multiple tensorflow graphs fo
 ## Quick Start
 
 ```bash
+pip install tensorflow>=2  # could be tf-nightly
 git clone https://github.com/jackd/multi-graph.git
 pip install -e multi-graph
 pip install absl-py tensorflow-datasets  # for example below

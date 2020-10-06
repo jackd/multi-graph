@@ -416,6 +416,10 @@ class ModelBuilder:
     def build(self, outputs) -> tf.keras.Model:
         if isinstance(outputs, (list, tuple)) and len(outputs) == 1:
             outputs = outputs[0]
+        # no idea why this is necessary...
+        # it works around some errors related to
+        # https://github.com/tensorflow/tensorflow/issues/41239
+        tf.keras.layers.Lambda(tf.identity)
         return tf.keras.Model(self._inputs, outputs)
 
     @property

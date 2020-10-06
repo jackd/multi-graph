@@ -12,10 +12,10 @@ pip install absl-py tensorflow-datasets  # for example below
 python multi-graph/examples/mnist.py
 ```
 
-To add as a requirement for an external package:
+To add as a requirement for an external package, the following can be added to `requirements.txt`
 
 ```txt
-git+git://github.com/jackd/multi-graph.git
+multi-graph@ git+git://github.com/jackd/multi-graph.git@master#egg=multi-graph;
 ```
 
 ## Usage

@@ -1,6 +1,25 @@
-# python-pkg
+# multi-graph
 
-TODO: Update title.
+Package for simultaneously building and connecting multiple tensorflow graphs for data pipelining.
+
+## Quick Start
+
+```bash
+git clone https://github.com/jackd/multi-graph.git
+pip install -e multi-graph
+pip install absl-py tensorflow-datasets  # for example below
+python multi-graph/examples/mnist.py
+```
+
+To add as a requirement for an external package:
+
+```txt
+git+git://github.com/jackd/multi-graph.git
+```
+
+## Usage
+
+See [examples/mnist.py](examples/mnist.py)
 
 ## Pre-commit
 

@@ -24,5 +24,5 @@ setup(
     install_requires=install_requires,
     zip_safe=True,
     python_requires=">=3.6",
-    version=".".join([_MAJOR_VERSION, _MINOR_VERSION, _PATCH_VERSION,]),
+    version=".".join([_MAJOR_VERSION, _MINOR_VERSION, _PATCH_VERSION]),
 )
